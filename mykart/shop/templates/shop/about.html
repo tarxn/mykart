@@ -1,0 +1,62 @@
+{% extends 'shop/basic.html'  %}
+
+{% block title %} About us {% endblock %}
+{% block css %}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    width: 250px;
+}
+{% endblock %}
+{% block body %}
+<main role="main">
+    {% load static %}
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Mykart.in</h1>
+          <p>Mykart is an Indian e-commerce company, headquartered in Bangalore, Karnataka, India, and incorporated in Singapore as a private limited company.[5] The company initially focused on online book sales before expanding into other product categories such as consumer electronics, fashion, home essentials, groceries, and lifestyle products.
+
+The service competes primarily with Amazon's Indian subsidiary and domestic rival Snapdeal.[6][7] As of March 2017, Flipkart held a 39.5% market share of India's e-commerce industry.[8] Flipkart has a dominant position in the apparel segment, bolstered by its acquisition of Myntra, and was described as being "neck and neck" with Amazon in the sale of electronics and mobile phones.[9] Flipkart also owns PhonePe, a mobile payments service based on the UPI.</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">More &raquo;</a></p>
+
+        </div>
+      </div>
+
+      <div class="container" >
+        <!-- Example row of columns -->
+        <h4 align="left">About the developer</h4>
+
+          <div class="row">
+              <div class="mb-3" style="max-width: 750px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/static/shop/mypic2.jpg"  class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">B. Tarun</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+
+  </div>
+</div>
+
+
+
+          </div>
+        </div>
+
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+      <p>&copy; Company 2021-2022</p>
+    </footer>
+
+{% endblock %}

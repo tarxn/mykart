@@ -1,0 +1,43 @@
+{% extends 'shop/basic.html'  %}
+
+{% block title %}{{product.prod_name }}-Mykart.in{% endblock %}
+{% block body %}
+<div class="container my-4">
+    <!--<div class="row">
+    <div class="col-md-4">
+    <div class="row">
+       <img src="/media//{{product.prod_image}}" width="120px" height="185px">
+    </div>
+        </div>
+    <div class="col-md-8 my-2">
+        <h5>{{product.prod_name}}</h5>
+      <h6><b> ₹ {{product.price}}</b></h6>
+        <p>{{product.prod_desc}}</p>
+    </div>
+        </div>
+   <div class="row my-4">
+            <button class="btn btn-primary mx-2 ">Buy Now</button>
+            <button class="btn btn-primary mx-2 ">Add To Cart</button>
+        </div>-->
+  <div class="container mb-3" style="max-width: 1600px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/media//{{product.prod_image}}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 >{{product.prod_name}}</h4>
+      <h5> ₹ <b>  {{product.price}}</b></h5>
+        <p>{{product.prod_desc}}</p>
+        <button class="btn btn-danger" >Buy Now</button>
+        <span id="divpr{{i.id}}" class="divpr">
+          <button id="pr{{i.id}}" class="btn btn-light cart" "> Add To Cart </button>
+      </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+{% endblock %}
+
